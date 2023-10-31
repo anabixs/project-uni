@@ -21,7 +21,7 @@ export default function Table() {
 
   return (
     <Grid container columnSpacing={12}>
-      <Grid item xs={3}>
+      <Grid xs={3}>
         <ColorButton
           className="table-button"
           variant="outlined"
@@ -31,7 +31,7 @@ export default function Table() {
           <span>Phone repair</span>
         </ColorButton>
       </Grid>
-      <Grid item xs={3}>
+      <Grid xs={3}>
         <ColorButton
           className="table-button"
           variant="outlined"
@@ -41,7 +41,7 @@ export default function Table() {
           <span>Tablet repair</span>
         </ColorButton>
       </Grid>
-      <Grid item xs={3}>
+      <Grid xs={3}>
         <ColorButton
           className="table-button"
           variant="outlined"
@@ -51,7 +51,7 @@ export default function Table() {
           <span>Laptop repair</span>
         </ColorButton>
       </Grid>
-      <Grid item xs={3}>
+      <Grid xs={3}>
         <ColorButton
           className="table-button"
           variant="outlined"
