@@ -5,7 +5,7 @@ import Button, { ButtonProps } from "@mui/material/Button";
 import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import TabletMacIcon from "@mui/icons-material/TabletMac";
 import LaptopIcon from "@mui/icons-material/Laptop";
-import LaptopChromebookIcon from "@mui/icons-material/LaptopChromebook";
+import MonitorIcon from "@mui/icons-material/Monitor";
 import { grey } from "@mui/material/colors";
 import { styled } from "@mui/material/styles";
 import "./App.css";
@@ -49,7 +49,11 @@ export default function Table() {
           <PhoneIphoneIcon fontSize="large" />
           <span>Phone repair</span>
         </ColorButton>
-        {phoneDropdown && <Models />}
+        {phoneDropdown && (
+          <div className="models">
+            <Models />
+          </div>
+        )}
       </Grid>
       <Grid xs={3}>
         <ColorButton
@@ -61,7 +65,11 @@ export default function Table() {
           <TabletMacIcon fontSize="large" />
           <span>Tablet repair</span>
         </ColorButton>
-        {tabletDropdown && <Models />}
+        {tabletDropdown && (
+          <div className="models">
+            <Models />
+          </div>
+        )}
       </Grid>
       <Grid xs={3}>
         <ColorButton
@@ -73,7 +81,11 @@ export default function Table() {
           <LaptopIcon fontSize="large" />
           <span>Laptop repair</span>
         </ColorButton>
-        {laptopDropdown && <Models />}
+        {laptopDropdown && (
+          <div className="models">
+            <Models />
+          </div>
+        )}
       </Grid>
       <Grid xs={3}>
         <ColorButton
@@ -82,10 +94,14 @@ export default function Table() {
           href="#text-buttons"
           onClick={() => toggleDropdown(setPcDropdown)}
         >
-          <LaptopChromebookIcon fontSize="large" />
+          <MonitorIcon fontSize="large" />
           <span>PC repair</span>
         </ColorButton>
-        {pcDropdown && <Models />}
+        {pcDropdown && (
+          <div className="models">
+            <Models />
+          </div>
+        )}
       </Grid>
     </Grid>
   );
