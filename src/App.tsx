@@ -1,6 +1,6 @@
-import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Table from "./Table";
+import Box from "@mui/material/Box";
 import "./App.css";
 
 function App() {

@@ -5,7 +5,7 @@ import Button, { ButtonProps } from "@mui/material/Button";
 import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import TabletMacIcon from "@mui/icons-material/TabletMac";
 import LaptopIcon from "@mui/icons-material/Laptop";
-import LaptopChromebookIcon from "@mui/icons-material/LaptopChromebook";
+import MonitorIcon from "@mui/icons-material/Monitor";
 import { grey } from "@mui/material/colors";
 import { styled } from "@mui/material/styles";
 import "./App.css";
@@ -82,7 +82,7 @@ export default function Table() {
           href="#text-buttons"
           onClick={() => toggleDropdown(setPcDropdown)}
         >
-          <LaptopChromebookIcon fontSize="large" />
+          <MonitorIcon fontSize="large" />
           <span>PC repair</span>
         </ColorButton>
         {pcDropdown && <Models />}

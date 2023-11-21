@@ -1,13 +1,18 @@
+import Button from "@mui/material/Button";
+import ButtonGroup from "@mui/material/ButtonGroup";
 export default function Models() {
   const items = ["lol", "kek", "cheburek"];
   //   const selectedItem = (item) => {
   //     ///
   //   };
   return (
-    <ul>
+    <ButtonGroup
+      orientation="vertical"
+      aria-label="vertical outlined button group"
+    >
       {items.map((item, index) => (
-        <li key={index}>{item}</li>
+        <Button key={index}>{item}</Button>
       ))}
-    </ul>
+    </ButtonGroup>
   );
 }
