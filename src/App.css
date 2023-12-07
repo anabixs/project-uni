@@ -1,6 +1,10 @@
-body {
+/* body {
   margin: 50px;
+} */
+* {
+  margin: 0;
 }
+
 .table-button {
   flex-direction: column;
   height: 150px;
@@ -15,4 +19,8 @@ body {
 }
 .models:first-child {
   width: 100%;
+}
+.link {
+  text-decoration: none;
+  color: aliceblue;
 }
