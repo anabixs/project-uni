@@ -39,7 +39,7 @@ export default function SignUp() {
       if (response.status === 200) {
         console.log("Registration successful");
         setIsLoading(false);
-        navigate("/");
+        navigate("/project-uni");
       } else {
         console.error("Registration failed");
         setIsLoading(false);
@@ -134,7 +134,7 @@ export default function SignUp() {
               </Button>
               <Grid container justifyContent="flex-end">
                 <Grid item>
-                  <Link href="/sign" variant="body2">
+                  <Link href="/project-uni/sign" variant="body2">
                     Already have an account? Sign in
                   </Link>
                 </Grid>

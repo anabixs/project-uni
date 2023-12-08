@@ -27,11 +27,11 @@ function App() {
                 <MenuIcon />
               </IconButton>
               <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                <Link to="/" className="link">
+                <Link to="/project-uni" className="link">
                   HOME
                 </Link>
               </Typography>
-              <Link to="/sign" className="link">
+              <Link to="/project-uni/sign" className="link">
                 <Button color="inherit">Login</Button>{" "}
               </Link>
             </Toolbar>
