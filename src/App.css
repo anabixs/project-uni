@@ -25,7 +25,7 @@
   color: aliceblue;
 }
 .spinner-bg {
-  position: fixed;
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
@@ -33,4 +33,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.linka {
+  margin: 0;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  color: #1976d2;
 }
