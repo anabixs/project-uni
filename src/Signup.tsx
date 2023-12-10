@@ -38,7 +38,7 @@ export default function SignUp() {
       if (response.status === 200) {
         console.log("Registration successful");
         setIsLoading(false);
-        navigate("/");
+        navigate("/project-uni");
       } else {
         console.error("Registration failed");
         setIsLoading(false);
