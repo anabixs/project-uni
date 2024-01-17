@@ -6,7 +6,7 @@ import Home from "./Home.tsx";
 import SignIn from "./Signin.tsx";
 import "./index.css";
 import SignUp from "./Signup.tsx";
-
+import Repair from "./Repair.tsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -23,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "/project-uni/signup",
         element: <SignUp />,
+      },
+      {
+        path: "/project-uni/repair/:id",
+        element: <Repair />,
       },
     ],
   },

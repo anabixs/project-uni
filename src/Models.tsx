@@ -1,22 +1,17 @@
-import { useEffect } from "react";
 import Button, { ButtonProps } from "@mui/material/Button";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import { grey } from "@mui/material/colors";
 import { styled } from "@mui/material/styles";
-import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
-export default function Models() {
-  const items = ["Hello", "World", "Hehehe"];
-  useEffect(() => {
-    axios
-      .get("https://mobile-phone-specs-database.p.rapidapi.com/gsm/all-brands")
-      .then((response) => {
-        console.log(response.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  });
+interface ModelsProps {
+  model1: string;
+  model2: string;
+  model3: string;
+}
+export default function Models({ model1, model2, model3 }: ModelsProps) {
+  const items = [model1, model2, model3];
+
   const color = grey[300];
   const darkColor = grey[400];
   const ColorButton = styled(Button)<ButtonProps>(({ theme }) => ({
@@ -30,13 +25,19 @@ export default function Models() {
   //   const selectedItem = (item) => {
   //     ///
   //   };
+  const history = useNavigate();
+  const handleModelClick = (modelName: string) => {
+    history(`/project-uni/repair/${modelName}`);
+  };
   return (
     <ButtonGroup
       orientation="vertical"
       aria-label="vertical outlined button group"
     >
       {items.map((item, index) => (
-        <ColorButton key={index}>{item}</ColorButton>
+        <ColorButton key={index} onClick={() => handleModelClick(item)}>
+          {item}
+        </ColorButton>
       ))}
     </ButtonGroup>
   );

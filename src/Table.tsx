@@ -51,7 +51,7 @@ export default function Table() {
         </ColorButton>
         {phoneDropdown && (
           <div className="models">
-            <Models />
+            <Models model1="Iphone" model2="Samsung" model3="Nokia" />
           </div>
         )}
       </Grid>
@@ -67,7 +67,7 @@ export default function Table() {
         </ColorButton>
         {tabletDropdown && (
           <div className="models">
-            <Models />
+            <Models model1="Iphone" model2="Nomi" model3="Nokia" />
           </div>
         )}
       </Grid>
@@ -83,7 +83,7 @@ export default function Table() {
         </ColorButton>
         {laptopDropdown && (
           <div className="models">
-            <Models />
+            <Models model1="Iphone" model2="Samsung" model3="Nokia" />
           </div>
         )}
       </Grid>
@@ -99,7 +99,7 @@ export default function Table() {
         </ColorButton>
         {pcDropdown && (
           <div className="models">
-            <Models />
+            <Models model1="Iphone" model2="Samsung" model3="Nokia" />
           </div>
         )}
       </Grid>
